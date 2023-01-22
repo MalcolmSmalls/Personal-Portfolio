@@ -8,12 +8,10 @@ function App() {
   return (
     <Router>
       <Header />
-      <main className='py-3'>
-        <Container>
-          <Routes>
-            <Route path='/' element={<HomeScreen />} />
-          </Routes>
-        </Container>
+      <main>
+        <Routes>
+          <Route path='/' element={<HomeScreen />} />
+        </Routes>
       </main>
       <Footer />
     </Router>

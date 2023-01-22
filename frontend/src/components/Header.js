@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 export default function Header() {
   return (
-    <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+    <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect sticky='top'>
       <Container>
         <LinkContainer to='/'>
           <Navbar.Brand>malcolmsmalls.dev</Navbar.Brand>
@@ -12,6 +12,14 @@ export default function Header() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ms-auto'>
+            <LinkContainer to='/resume'>
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to='/resume'>
+              <Nav.Link>Portfolio</Nav.Link>
+            </LinkContainer>
+
             <LinkContainer to='/resume'>
               <Nav.Link>Resume</Nav.Link>
             </LinkContainer>
