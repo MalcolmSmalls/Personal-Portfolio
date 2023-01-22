@@ -1,5 +1,11 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 export default function HomeScreen() {
-  return <div>HomeScreen</div>
+  return (
+    <>
+      <Hero />
+      <div>HomeScreen</div>
+    </>
+  )
 }
